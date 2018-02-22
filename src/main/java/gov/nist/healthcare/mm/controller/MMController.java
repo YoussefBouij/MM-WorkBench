@@ -22,10 +22,10 @@ public class MMController {
     @RequestMapping(value="/modify", method=RequestMethod.POST)
     @ResponseBody
     public ModifyResult hello(@RequestBody ModifyRequest req) {
-    	
+    		ModifyResult mdr = new ModifyResult();
     	
         //TODO Logic
-    		return new Stub(req.getMsg());
+    		return mdr;
     }
  
 }
